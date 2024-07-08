@@ -5,7 +5,7 @@ Multi Meta-domain heterogeneous graph aggregation learning and contrastive learn
 
 This repository contains pyTorch code and datasets for the paper.
 
->Li Penga, Jiahuai Yang, Cheng Yang, Xiangzheng Fu, Huaping Li, Wang Wang, Wei Liang. MMDACLDPI
+>Li Peng, Jiahuai Yang, Cheng Yang, Xiangzheng Fu, Huaping Li, Wang Wang, Wei Liang. MMDACLDPI
 
 ## Introduction
 MMDACL combines Multi Meta-domain heterogeneous graph aggregation learning and contrast learning, aiming to capture complex structures and rich semantic relationships from biological heterogeneous graphs.
