@@ -24,3 +24,4 @@ pyTorch:
 * pandas=1.5.3
 * scipy=1.10.1
 * dgl=1.1.0
+* scikit-learn=1.2.0
