@@ -1,5 +1,6 @@
 import torch
 from sklearn.preprocessing import normalize
+from scipy import sparse as sp
 from imports import *
 import numpy as np
 from numpy import ndarray
