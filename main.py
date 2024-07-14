@@ -174,11 +174,11 @@ def train():
         count += 1
 
     # 得到dti_cledge.txt
-    # f = open("dti_cledge.txt", "w", encoding="utf-8")
-    # for i in range(count):
-    #     for j in range(count):
-    #         if data_set[i][0] == data_set[j][0] or data_set[i][1] == data_set[j][1]:
-    #             f.write(f"{i}\t{j}\n")
+    f = open("dti_cledge.txt", "w", encoding="utf-8")
+    for i in range(count):
+        for j in range(count):
+            if data_set[i][0] == data_set[j][0] or data_set[i][1] == data_set[j][1]:
+                f.write(f"{i}\t{j}\n")
 
     data_negative_sample_index = np.zeros((len(negative_sample_index), 3), dtype=int)
     countNeg = 0
@@ -193,19 +193,19 @@ def train():
         countNeg += 1
 
     # 得到dti_index.txt
-    # f = open(f"dti_index.txt", "w", encoding="utf-8")
-    # for i in data_set:
-    #     f.write(f"{i[0]}\t{i[1]}\t{i[2]}\n")
+    f = open(f"dti_index.txt", "w", encoding="utf-8")
+    for i in data_set:
+        f.write(f"{i[0]}\t{i[1]}\t{i[2]}\n")
 
     dateset = data_set
 
     # 得到dtiedge.txt
-    # f = open("dtiedge.txt", "w", encoding="utf-8")
-    # for i in range(dateset.shape[0]):
-    #     for j in range(i, dateset.shape[0]):
-    #         if dateset[i][0] == dateset[j][0] or dateset[i][1] == dateset[j][1]:
-    #             f.write(f"{i}\t{j}\n")
-    # f.close()
+    f = open("dtiedge.txt", "w", encoding="utf-8")
+    for i in range(dateset.shape[0]):
+        for j in range(i, dateset.shape[0]):
+            if dateset[i][0] == dateset[j][0] or dateset[i][1] == dateset[j][1]:
+                f.write(f"{i}\t{j}\n")
+    f.close()
 
     # load clGraph
     cl = get_clGraph(dateset, "dti").to(device)
