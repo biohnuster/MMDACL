@@ -1,11 +1,11 @@
 # MMDACL
-Multi Meta-domain heterogeneous graph aggregation learning and contrastive learning for drug-protein interaction prediction (MMDACL)
+Multi Meta-domain heterogeneous graph aggregation learning and contrastive learning for drug-target interaction prediction (MMDACL)
 
 ### Torch version is available now!
 
 This repository contains pyTorch code and datasets for the paper.
 
->Li Peng, Jiahuai Yang, Cheng Yang, Xiangzheng Fu, Huaping Li, Wang Wang, Wei Liang. MMDACLDPI
+>Li Peng*, Jiahuai Yang, Zhendong Wang, Jiabao Quan, Xiangzheng Fu and Dongsheng Cao* MMDACL DTI
 
 ## Introduction
 MMDACL combines Multi Meta-domain heterogeneous graph aggregation learning and contrast learning, aiming to capture complex structures and rich semantic relationships from biological heterogeneous graphs.
